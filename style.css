@@ -430,8 +430,119 @@ img {
 }
 
 
+/* For IPHONE 5/SE*/
+@media (min-width: 320px) and (max-width: 568px) {
 
-/* SmartPhones(iphone 6/7/8) Styles so The wesite be responsive*/
+    /* Navbar Section */
+    #navbar {
+        flex-direction: column;
+        align-items: center
+    }
+
+    #navbar .logo1 {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    #navbar ul {
+        padding: 0.7rem 0.6rem;
+    }
+    /* Showcase Section */
+    #showcase1 #Intro1 {
+        align-items: center;
+        text-align: center;
+    }
+
+    #showcase1 .btn1 {
+        padding: 0.5rem 0;
+        width: 35%;
+        text-align: center;
+        top: 80%;
+        right: 37%;
+    }
+
+    /* About Section */
+    #About {
+        display: block;
+    }
+
+    #About .About11-img {
+        display: none;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    /* Skills section*/
+
+    #skills .level1 {
+        text-align: right;
+    }
+
+    .level1 {
+        min-width: 400px;
+        color: #fff;
+    }
+
+    .level1::before {
+        position: absolute;
+        content: '';
+        width: 80%;
+        height: 25px;
+        top: 0;
+        z-index: -2;
+    }
+
+    .level1::after {
+        content: '';
+        background: #13bbf3;
+        height: 30px;
+        font-size: 1rem;
+        border-radius: 15px;
+        transition: 0.8s;
+        display: block;
+        width: 60%;
+        animation: animate 1 10s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .level12::after {
+        max-width: 59%;
+    }
+
+    .level13::after {
+        max-width: 56%;
+    }
+
+    .level14::after {
+        max-width: 56%;
+    }
+
+    .level15::after {
+        max-width: 56%;
+    }
+
+    .level16::after {
+        max-width: 50%;
+    }
+
+    .level17::after {
+        max-width: 60%;
+    }
+
+    .level18::after {
+        max-width: 60%;
+    }
+    #Contact #email11{
+        font-size: 0.5rem;
+    }
+}
+
+/* (iphone 6/7/8) Styles so The wesite be responsive*/
 @media (min-width: 375px) and (max-width: 667px) {
 
     /* Navbar Section */
