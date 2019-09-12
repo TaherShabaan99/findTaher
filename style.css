@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* To get rid of the any default value*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #202020;
+    color: #fff;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 1;
+}
+
+#navbar #list1 {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar #list1 li a {
+    color: #fff;
+    padding: 0.65rem;
+    margin: 0 0.25rem;
+
+}
+
+#navbar #list1 li a:hover {
+    background-color: #8B0000;
+    border-radius: 0.9rem;
+    transition: .5s ease;
+}
+
+.text-primary1 {
+    color: #8B0000;
+    font-size: 1.8rem;
+}
+
+#showcase1 {
+    background: url('./desk&mac.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.btn1 {
+    padding: 0.9rem 2rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    position: absolute;
+    transition: .5s ease;
+    top: 80%;
+    right: 80%;
+    color: #fff;
+    background: #8B0000;
+}
+
+#showcase1-content1 .btn1:hover {
+    background-color: #202020;
+    transition: .5s ease;
+    /*Grows in size like Angry Birds button*/
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.l-heading1 {
+    font-size: 3rem;
+    font-weight: 250;
+    color: #8B0000;
+}
+
+#Intro1 h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #8B0000
+}
+
+/*Cuser for the typing effect*/
+.txt-type>.txt {
+    border-right: 0.5px solid #8B0000;
+}
+
+#Intro1 {
+    padding: 0.9rem 2rem;
+    top: 50%;
+    right: 50%;
+    bottom: 30%;
+}
+
+/* About11 section */
+#About {
+    display: flex;
+    color: #fff;
+}
+
+#About .About-ME2 {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-weight: 210;
+    color: #fff;
+}
+
+.color-font {
+    color: #8B0000;
+    font-size: 1.3rem;
+}
+
+#About div {
+    flex: 1;
+}
+
+.bg-blue {
+    background: #060629;
+}
+
+.p2 {
+    padding: 1rem 1.2rem;
+}
+
+#About .About11-img {
+    padding: 1rem 0rem;
+    background: url('./myface.png') no-repeat center center/cover;
+    background-size: 100% 100%;
+    /* to show my face when it's full screen*/
+}
+
+/* Project --- Section */
+
+.pg-2 {
+    background: #c0e1ec;
+}
+
+.container1 {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+#Projects {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.title-des {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+    margin: 1.2rem 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.title1-des1 {
+    border-bottom: 7px solid #fff;
+}
+
+/* There will be an animation here */
+.title1-des2:hover {
+    -webkit-animation: moving-image 2s 2;
+}
+
+@-webkit-keyframes moving-image {
+    from {
+        -webkit-transform: rotate(0deg) scale(1);
+    }
+
+    to {
+        -webkit-transform: rotate(180deg) scale(1.3);
+    }
+}
+
+.languages {
+    font-size: 2.1rem;
+    color: #7bb3c5;
+}
+
+.pg-2 h3 {
+    text-decoration: underline;
+    color: #060629;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 220;
+    text-transform: uppercase;
+
+}
+
+.pg-2 p {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #060629;
+}
+
+img {
+    width: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* If we've 3 columns then 1fr 1fr 1fr or repeat(3, 1fr)*/
+    grid-gap: 2rem;
+    background: #fff;
+    margin-bottom: 2rem;
+}
+
+.cards h3 {
+    margin-bottom: 2rem;
+}
+
+.cards img {
+    height: 600px;
+    ;
+}
+
+.cards>div {
+    padding: 1rem;
+}
+
+.cards:nth-child(even) img {
+    order: 2;
+}
+
+/* Will not use the btn1 class because we want it to have different style*/
+.btn11 {
+    display: inline-block;
+    border: 1px solid #060629;
+    background: #060629;
+    color: #7bb3c5;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+}
+
+.btn11:hover {
+    opacity: 0.9;
+}
+
+/* Skills Section */
+
+#skills h2 {
+    padding-top: 0.3rem;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #060629;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#skills h3 {
+    margin-left: 1rem;
+    color: #060629;
+}
+
+#skills div {
+    margin: 0.5rem 1rem;
+}
+
+#skills .level1 {
+    text-align: center;
+}
+
+.level1 {
+    height: 25px;
+    min-width: 500px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #060629;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.level1::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 25px;
+    top: 0;
+    z-index: -2;
+}
+
+.level1::after {
+    content: '';
+    background: #13bbf3;
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 15px;
+    transition: 0.8s;
+    display: block;
+    width: 100%;
+    animation: animate 1 4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.level12::after {
+    max-width: 85%;
+}
+
+.level13::after {
+    max-width: 80%;
+}
+
+.level14::after {
+    max-width: 80%;
+}
+
+.level15::after {
+    max-width: 85%;
+}
+
+.level16::after {
+    max-width: 65%;
+}
+
+.level17::after {
+    max-width: 95%;
+}
+
+.level18::after {
+    max-width: 95%;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* Contact Section */
+
+#Contact {
+    background: #0c0c31;
+    height: 100%;
+    padding: 0.3rem 1rem;
+    width: 100%;
+    color: #fff;
+}
+
+#Contact h2 {
+    text-align: center;
+    padding: 1rem 0.5rem;
+    font-size: 3rem;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 1.1;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#Contact p,
+#Contact a {
+    font-size: 1.5rem;
+    font-weight: 150;
+    line-height: 0.8;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+#Contact #logo-email {
+    margin: 0.5rem 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.clr1 {
+    clear: both;
+}
+
+#footer1 {
+    height: 100%;
+    padding: 1rem 1rem;
+    text-align: center;
+    color: #fff;
+    background: #0c0c1f;
+}
+
+#footer1 img {
+    padding-left: 25px;
+    padding-top: 5px;
+    width: 70px;
+}
+
+
+
+/* SmartPhones(iphone 6/7/8) Styles so The wesite be responsive*/
+@media (min-width: 375px) and (max-width: 667px) {
+
+    /* Navbar Section */
+    #navbar {
+        flex-direction: column;
+        align-items: center
+    }
+
+    #navbar .logo1 {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    #navbar ul {
+        padding: 0.9rem;
+    }
+
+    /* Showcase Section */
+    #showcase1 #Intro1 {
+        align-items: center;
+        text-align: center;
+    }
+
+    #showcase1 .btn1 {
+        padding: 0.5rem 0;
+        width: 27%;
+        text-align: center;
+        top: 100%;
+        right: 40%;
+    }
+
+    /* About Section */
+    #About {
+        display: block;
+    }
+
+    #About .About11-img {
+        display: none;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    /* Skills section*/
+
+    #skills .level1 {
+        text-align: right;
+    }
+
+    .level1 {
+        min-width: 400px;
+        color: #fff;
+    }
+
+    .level1::before {
+        position: absolute;
+        content: '';
+        width: 90%;
+        height: 25px;
+        top: 0;
+        z-index: -2;
+    }
+
+    .level1::after {
+        content: '';
+        background: #13bbf3;
+        height: 30px;
+        font-size: 1rem;
+        border-radius: 15px;
+        transition: 0.8s;
+        display: block;
+        width: 80%;
+        animation: animate 1 10s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .level12::after {
+        max-width: 60%;
+    }
+
+    .level13::after {
+        max-width: 60%;
+    }
+
+    .level14::after {
+        max-width: 60%;
+    }
+
+    .level15::after {
+        max-width: 55%;
+    }
+
+    .level16::after {
+        max-width: 50%;
+    }
+
+    .level17::after {
+        max-width: 80%;
+    }
+
+    .level18::after {
+        max-width: 75%;
+    }
+}
+
+
+/* SmartPhones(iphone 6,7,8(PLUS)) */
+
+@media (min-width:414px) and (max-width: 736px) {
+    #showcase1 .btn1 {
+        padding: 0.5rem 0;
+        width: 23%;
+        text-align: center;
+        top: 80%;
+        right: 40%;
+    }
+
+    /* Skills section*/
+
+    .level1 {
+        text-align: right;
+        min-width: 400px;
+        color: #fff;
+    }
+
+
+    .level12::after {
+        max-width: 60%;
+    }
+
+    .level13::after {
+        max-width: 60%;
+    }
+
+    .level14::after {
+        max-width: 60%;
+    }
+
+    .level15::after {
+        max-width: 60%;
+    }
+
+    .level16::after {
+        max-width: 55%;
+    }
+
+    .level17::after {
+        max-width: 65%;
+    }
+
+    .level18::after {
+        max-width: 65%;
+    }
+}
+
+/* For IPHONE X */
+@media (min-width:375px) and (max-width: 814px) {
+    #showcase1 .btn1 {
+        padding: 0.5rem 0;
+        width: 23%;
+        text-align: center;
+        top: 80%;
+        right: 40%;
+    }
+
+    /* Skills section*/
+
+    .level1 {
+        text-align: right;
+        min-width: 400px;
+        color: #fff;
+    }
+
+    .level12::after {
+        max-width: 70%;
+    }
+
+    .level13::after {
+        max-width: 65%;
+    }
+
+    .level14::after {
+        max-width: 65%;
+    }
+
+    .level15::after {
+        max-width: 70%;
+    }
+
+    .level16::after {
+        max-width: 60%;
+    }
+
+    .level17::after {
+        max-width: 74%;
+    }
+
+    .level18::after {
+        max-width: 74%;
+    }
+}
