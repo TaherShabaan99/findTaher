@@ -637,3 +637,117 @@ img {
         max-width: 74%;
     }
 }
+
+
+/* For samsung S5*/
+@media (min-width: 360px) and (max-width: 640px) {
+
+    /* Navbar Section */
+    #navbar {
+        flex-direction: column;
+        align-items: center
+    }
+
+    #navbar .logo1 {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    #navbar ul {
+        padding: 0.7rem 0.6rem;
+    }
+
+    /* Showcase Section */
+    #showcase1 #Intro1 {
+        align-items: center;
+        text-align: center;
+    }
+
+    #showcase1 .btn1 {
+        padding: 0.5rem 0;
+        width: 35%;
+        text-align: center;
+        top: 80%;
+        right: 37%;
+    }
+
+    /* About Section */
+    #About {
+        display: block;
+    }
+
+    #About .About11-img {
+        display: none;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    /* Skills section*/
+
+    #skills .level1 {
+        text-align: right;
+    }
+
+    .level1 {
+        min-width: 400px;
+        color: #fff;
+    }
+
+    .level1::before {
+        position: absolute;
+        content: '';
+        width: 90%;
+        height: 25px;
+        top: 0;
+        z-index: -2;
+    }
+
+    .level1::after {
+        content: '';
+        background: #13bbf3;
+        height: 30px;
+        font-size: 1rem;
+        border-radius: 15px;
+        transition: 0.8s;
+        display: block;
+        width: 70%;
+        animation: animate 1 10s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .level12::after {
+        max-width: 60%;
+    }
+
+    .level13::after {
+        max-width: 60%;
+    }
+
+    .level14::after {
+        max-width: 60%;
+    }
+
+    .level15::after {
+        max-width: 55%;
+    }
+
+    .level16::after {
+        max-width: 50%;
+    }
+
+    .level17::after {
+        max-width: 80%;
+    }
+
+    .level18::after {
+        max-width: 75%;
+    }
+    #Contact #email11{
+        font-size: 0.5rem;
+    }
+}
