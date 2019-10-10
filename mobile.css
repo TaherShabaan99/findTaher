@@ -28,6 +28,7 @@
   }
 
   /* About Section */
+
   #About {
       display: block;
   }
@@ -35,6 +36,7 @@
   #About .About11-img {
       display: none;
   }
+/* Project Section */
 
   .cards {
       display: block;

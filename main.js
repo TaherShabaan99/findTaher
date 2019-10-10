@@ -56,15 +56,18 @@ document.addEventListener('DOMContentLoaded', init);
 
 //Init App
 function init() {
+    
   const txtElement = document.querySelector('.txt-type');
   //JSON.parse was used to be work in javascript otherwise it's just like a string
   const words = JSON.parse(txtElement.getAttribute('data-words'));
   const wait = txtElement.getAttribute('data-wait');
   //Init TypeWriter
   new TypeWriter(txtElement, words, wait);
+    
 }
 
 //Smooth Scrolling(JQuery)
+
 $('#navbar a, .btn').on('click', function (event) {
   if (this.hash !== '') {
     event.preventDefault();
