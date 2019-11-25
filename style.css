@@ -149,6 +149,8 @@ p {
     padding: 1rem 0rem;
     background: url('./myface.png') no-repeat center center/cover;
     background-size: 100% 100%;
+    border-radius: 70%;
+    flex-shrink: unset;
     /* to show my face when it's full screen*/
 }
 
