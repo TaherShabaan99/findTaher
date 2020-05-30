@@ -31,7 +31,7 @@ p {
     display: flex;
     position:sticky;
     top: 0;
-    background: #202020;
+    background: #191C1B;
     color: #fff;
     justify-content: space-between;
     padding: 1rem;
@@ -52,18 +52,18 @@ p {
 }
 
 #navbar #list1 li a:hover {
-    background-color: #8B0000;
+    background-color: #00B490;
     border-radius: 0.9rem;
     transition: .5s ease;
 }
 
 .text-primary1 {
-    color: #8B0000;
+    color: #00B490;
     font-size: 1.8rem;
 }
 
 #showcase1 {
-    background: url('./desk&mac.jpg') no-repeat center center/cover;
+    background: url('./do-more.jpg') no-repeat center center/cover;
     height: 100vh;
     width: 100%;
 }
@@ -71,14 +71,14 @@ p {
 
 .btn1 {
     padding: 0.9rem 2rem;
-    border: 1px solid #fff;
+    border: 1px solid #191C1B;
     border-radius: 1rem;
     position: absolute;
     transition: .5s ease;
     top: 80%;
     right: 80%;
     color: #fff;
-    background: #8B0000;
+    background: #00B490;
 }
 
 #showcase1-content1 .btn1:hover {
@@ -94,18 +94,21 @@ p {
 .l-heading1 {
     font-size: 3rem;
     font-weight: 250;
-    color: #8B0000;
+    color: #191C1B;
+}
+.l-heading1 #l-heading2{
+    color: #00B490;
 }
 
 #Intro1 h2 {
     font-size: 2.5rem;
     font-weight: 200;
-    color: #8B0000
+    color: #00B490;
 }
 
 /*Cuser for the typing effect*/
 .txt-type>.txt {
-    border-right: 0.5px solid #8B0000;
+    border-right: 0.5px solid #00B490;
 }
 
 #Intro1 {
@@ -129,7 +132,7 @@ p {
 }
 
 .color-font {
-    color: #8B0000;
+    color: #00B490;
     font-size: 1.3rem;
 }
 
@@ -138,7 +141,7 @@ p {
 }
 
 .bg-blue {
-    background: #060629;
+    background: #191C1B;
 }
 
 .p2 {
@@ -157,7 +160,7 @@ p {
 /* Project --- Section */
 
 .pg-2 {
-    background: #c0e1ec;
+    background: #191C1B;
 }
 
 .container1 {
@@ -186,11 +189,11 @@ p {
     margin: 1.2rem 0.5rem;
     text-transform: uppercase;
     text-align: center;
-    color: #fff;
+    color: #00B490;
 }
 
 .title1-des1 {
-    border-bottom: 7px solid #fff;
+    border-bottom: 7px solid #00B490;
 }
 
 /* There will be an animation here */
@@ -210,12 +213,12 @@ p {
 
 .languages {
     font-size: 2.1rem;
-    color: #7bb3c5;
+    color: rgb(0, 0, 0)
 }
 
 .pg-2 h3 {
     text-decoration: underline;
-    color: #060629;
+    color: #00B490;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 220;
@@ -226,7 +229,7 @@ p {
 .pg-2 p {
     font-size: 2rem;
     font-weight: 200;
-    color: #060629;
+    color: #00B490;
 }
 
 img {
@@ -261,9 +264,9 @@ img {
 /* Will not use the btn1 class because we want it to have different style*/
 .btn11 {
     display: inline-block;
-    border: 1px solid #060629;
-    background: #060629;
-    color: #7bb3c5;
+    border: 1px solid #191C1B;
+    background: #191C1B;
+    color: #00B490;
     cursor: pointer;
     margin-top: 1rem;
     padding: 0.7rem 1.5rem;
@@ -279,7 +282,7 @@ img {
     padding-top: 0.3rem;
     font-size: 3rem;
     font-weight: 300;
-    color: #060629;
+    color: #00B490;
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase;
@@ -287,7 +290,7 @@ img {
 
 #skills h3 {
     margin-left: 1rem;
-    color: #060629;
+    color: #00B490;
 }
 
 #skills div {
@@ -303,7 +306,7 @@ img {
     min-width: 500px;
     line-height: 25px;
     font-size: 15px;
-    color: #060629;
+    color: #191C1B;
     position: relative;
     padding: 0 1rem;
 }
@@ -319,7 +322,7 @@ img {
 
 .level1::after {
     content: '';
-    background: #13bbf3;
+    background: #00B490;
     height: 30px;
     font-size: 1rem;
     border-radius: 15px;
@@ -374,7 +377,7 @@ img {
 /* Contact Section */
 
 #Contact {
-    background: #0c0c31;
+    background: #191C1B;
     height: 100%;
     padding: 0.3rem 1rem;
     width: 100%;
@@ -391,7 +394,7 @@ img {
     align-items: center;
     justify-items: center;
     text-align: center;
-    color: #fff;
+    color: #00B490;
 }
 
 #Contact p,
@@ -401,7 +404,7 @@ img {
     line-height: 0.8;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: #00B490;
     margin-bottom: 0.5rem;
 }
 
@@ -421,7 +424,7 @@ img {
     padding: 1rem 1rem;
     text-align: center;
     color: #fff;
-    background: #0c0c1f;
+    background: #00B490;
 }
 
 #footer1 img {
@@ -429,4 +432,6 @@ img {
     padding-top: 5px;
     width: 70px;
 }
-
+#footer1 #footer-v2{
+    color: #191C1B;
+}

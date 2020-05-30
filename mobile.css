@@ -64,7 +64,7 @@
 
   .level1::after {
       content: '';
-      background: #13bbf3;
+      background: #00B490;
       height: 30px;
       font-size: 1rem;
       border-radius: 15px;
